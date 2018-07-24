@@ -25,3 +25,4 @@ GameList.prototype.fetchData = function() {
     }
   });
 }
+

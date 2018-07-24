@@ -2,8 +2,12 @@ function Game() {
   this._id = "";
   this.title = "";
   this.imageUrl = "";
-  this.description = "";
+  this.description = ""; 
+  this.releaseDate = "";
+  this.genre = "";
+  this.publisher = "";
 }
+
 
 
 Game.prototype.fetchData = function(_id) {
@@ -15,9 +19,15 @@ Game.prototype.fetchData = function(_id) {
       that.title = data.title;
       that.imageUrl = data.imageUrl;
       that.description = data.description;
+      that.releaseDate = data.releaseDate;
+      that.genre = data.genre;
+      that.publisher = data.publisher;
     },
     error: function() {
       alert('Something went wrong when fetching Post details!');
     }
   })
 }
+
+
+
